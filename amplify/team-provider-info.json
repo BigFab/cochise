@@ -10,6 +10,11 @@
       "StackName": "amplify-cochise-dev-45414",
       "StackId": "arn:aws:cloudformation:eu-west-3:371447404392:stack/amplify-cochise-dev-45414/073316a0-92d6-11ef-9099-0af1516ce1af",
       "AmplifyAppId": "d2nedg1kaesddj"
+    },
+    "categories": {
+      "auth": {
+        "cochise9ddf1a2d": {}
+      }
     }
   }
 }
