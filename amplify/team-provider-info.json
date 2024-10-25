@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cochise-dev-45414-authRole",
+      "UnauthRoleArn": "arn:aws:iam::371447404392:role/amplify-cochise-dev-45414-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::371447404392:role/amplify-cochise-dev-45414-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-cochise-dev-45414-deployment",
+      "UnauthRoleName": "amplify-cochise-dev-45414-unauthRole",
+      "StackName": "amplify-cochise-dev-45414",
+      "StackId": "arn:aws:cloudformation:eu-west-3:371447404392:stack/amplify-cochise-dev-45414/073316a0-92d6-11ef-9099-0af1516ce1af",
+      "AmplifyAppId": "d2nedg1kaesddj"
+    }
+  }
+}
