@@ -1,7 +1,7 @@
 import 'package:amplify_authenticator/amplify_authenticator.dart';
 import 'package:cochise/common/navigation/router/router.dart';
-import 'package:cochise/common/utils/colors.dart' as constants;
 import 'package:flutter/material.dart';
+import 'theme.dart';
 
 class CochiseApp extends StatelessWidget {
   const CochiseApp({
@@ -10,18 +10,14 @@ class CochiseApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const basilTheme = BasilTheme();
+    final mApp = MaterialApp.router(
+      routerConfig: router,
+      builder: Authenticator.builder(),
+      theme: basilTheme.toThemeData(),
+    );
     return Authenticator(
-      child: MaterialApp.router(
-        routerConfig: router,
-        builder: Authenticator.builder(),
-        theme: ThemeData(
-          colorScheme:
-              ColorScheme.fromSwatch(primarySwatch: constants.primaryColor)
-                  .copyWith(
-            background: const Color(0xff82CFEA),
-          ),
-        ),
-      ),
+      child: mApp,
     );
   }
 }

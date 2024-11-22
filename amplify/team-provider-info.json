@@ -9,11 +9,21 @@
       "UnauthRoleName": "amplify-cochise-dev-45414-unauthRole",
       "StackName": "amplify-cochise-dev-45414",
       "StackId": "arn:aws:cloudformation:eu-west-3:371447404392:stack/amplify-cochise-dev-45414/073316a0-92d6-11ef-9099-0af1516ce1af",
-      "AmplifyAppId": "d2nedg1kaesddj"
+      "AmplifyAppId": "d2nedg1kaesddj",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-cochise-dev-45414-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
         "cochise9ddf1a2d": {}
+      },
+      "api": {
+        "cochise": {}
+      },
+      "function": {
+        "cochise9ddf1a2dPostConfirmation": {
+          "deploymentBucketName": "amplify-cochise-dev-45414-deployment",
+          "s3Key": "amplify-builds/cochise9ddf1a2dPostConfirmation-4d6474444c4b3859426d-build.zip"
+        }
       }
     }
   }

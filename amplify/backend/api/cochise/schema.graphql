@@ -1,0 +1,25 @@
+type Observation @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  date: AWSDate!
+  time: AWSTime!
+  bodyLocation: BodyLocation!
+  notes: String
+}
+
+type Profile
+  @model
+  @auth(
+    rules: [
+      { allow: private, provider: iam }
+      { allow: owner, operations: [read, update, create] }
+    ]
+  ) {
+  id: ID!
+  email: String!
+  firstName: String
+  lastName: String
+  homeCity: String
+  owner: String! 
+}
+
+enum BodyLocation { Oesophage, Intestins, Estomac, Gorge }
